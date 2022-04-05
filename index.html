@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="stylo.css">
+
+</head>
+<body>
+    <div class="text-center">
+    <h1>CALCULATOR</h1>
+    <form id="frm1">
+        Enter Subject1 mark
+        <input type="text" id="txt1">
+        <br>
+         
+        Enter Subject2 mark
+        <input type="text" id="txt2">
+        <br>
+        
+         
+        Enter Subject3 mark
+        <input type="text" id="txt3">
+         
+        <br>
+        Enter Subject4 mark
+        <input type="text" id="txt4">
+        
+        <br>
+        Enter Subject5 mark
+        <input type="text" id="txt5">
+        
+       
+        <br> 
+        Enter Subject6 mark
+        <input type="text" id="txt6">
+        <br>
+         
+        Enter Subject7 mark
+        <input type="text" id="txt7">
+        
+        <br>
+        Enter GPA
+        <input type="text" id="gpa">
+        <br>
+        <input type="button" id="btn" onclick="fn()" value="submit">
+    </form>
+    <script>
+        function fn(){
+   
+
+            let a=document.getElementById("txt1");
+            let b=document.getElementById("txt2");
+            let c=document.getElementById("txt3");
+            let d=document.getElementById("txt4");
+            let e=document.getElementById("txt5");
+            let f=document.getElementById("txt6");
+            let g=document.getElementById("txt7");
+            let j=parseInt(document.getElementById("gpa").value);
+            let h=(parseInt(a.value)+parseInt(b.value)+parseInt(c.value)+parseInt(d.value)+parseInt(e.value)+parseInt(f.value)+parseInt(g.value))/7;
+            alert("Your GPA is:"+h);
+             let i=(h+j)/2;
+            alert("CGPA is:"+i);
+            
+
+        }
+    </script>
+    </div>
+</body>
+</html>
